@@ -1,0 +1,113 @@
+header{
+    width: 100%;
+    height: 250px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.caja-logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 180px;
+    height: 180px;
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    letter-spacing: 5px;
+    font-family: "DRagonlord";
+}
+.nav{
+    
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    }
+
+
+.opciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: red;
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 2000px;
+    background-color: aqua;
+    
+    
+}
+
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-color: yellow;
+    border-bottom: 3px solid black;
+    
+}
+
+.main_container_box{
+    width: 800px;
+    height: 400px;
+    background-color: blue;
+    border-radius: 20px ;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.main_container_box_item:first-child{
+
+    border-radius: 20px 0px 0px 20px;
+    
+}
+
+.main_container_box_item:nth-child(3){
+    border-radius: 0px 20px 20px 0px;
+    
+}
+
+
+@media screen and (max-width:875px) {
+    .opciones{
+        margin: 0px;
+    }
+
+    .main_container_box{
+       
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 10px;
+    }
+}
