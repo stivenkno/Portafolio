@@ -12,35 +12,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&family=Oswald:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2a8d291213.js" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/2a8d291213.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&family=Oswald:wght@600&display=swap" rel="stylesheet">
 	<title>proyecto practica</title>
 </head>
 <body>
 	
 	<header id="header">
-		<div class="caja-logo">
+		<div class="caja-logo" id="inicio">
 			<div class="logo">KNO</div>
 		</div>
 
 	</header>
 
 	<nav class="nav">
-		<div class="opciones"><a href="#">INICIO</a></div>
-		<div class="opciones"><a href="#">SKILLS</a></div>
-		<div class="opciones"><a href="#">PROYECTOS</a></div>
-		<div class="opciones"><a href="#">CONTACT</a></div>
+		<div class="opciones"><a href="#inicio">INICIO</a></div>
+		<div class="opciones"><a href="#skills">SKILLS</a></div>
+		<div class="opciones"><a href="#proyectos">PROYECTOS</a></div>
+		<div class="opciones"><a href="#contact">CONTACT</a></div>
 	</nav>
 	
 
 	<div class="main">
 
-       <div  class="main_container">
-		 
+       <div  class="main_container cero">
+		<div class="primer-container">
+		<div class="presentacion">
+			HI IM KNO<br>
+			WEB DEVELOPMENT
+		</div>
+		 <img src="fondo.jpg" alt="imagen-astronauta" class="imagen">
+		 </div>
 	   </div>
 
-	   <div class="main_container">
+	   <div class="main_container" id="skills">
 		<div class="main_container_box uno">
 
-			<div class="titulos_main">SKILLS</div>
+			<div class="titulos_main" >SKILLS</div>
 
 			<div class="main_container_box_item">
 				<i class="fa-brands fa-html5"></i>
@@ -101,7 +110,7 @@
 		  </div>
 	   </div>
 
-	   <div class="main_container">
+	   <div class="main_container" id="proyectos">
 		<div class="main_container_box tres">
 
 			
@@ -109,7 +118,9 @@
 		  </div>
 	   </div>
 
-	   <div class="main_container"></div>
+	   <div class="main_container" id="contact">
+
+	   </div>
 	</div>
 
 

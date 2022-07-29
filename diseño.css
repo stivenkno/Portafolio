@@ -7,11 +7,15 @@ header{
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .caja-logo{
     width: 100%;
     height: 100%;
     display: flex;
-    background-color: blue;
+    background-color: black;
     justify-content: center;
     align-items: center;
 }
@@ -19,7 +23,7 @@ header{
 .logo{
     width: 180px;
     height: 180px;
-    background-color: black;
+    background-color: rgb(30,30,30);
     border-radius: 100%;
     color: white;
     display: flex;
@@ -34,24 +38,27 @@ header{
     display: flex;
     width: 100%;
     height: 60px;
-    background-color: orange;
+    background-color: rgb(0, 157, 224);
     justify-content: center;
     align-items: center;
     position: sticky;
     top: 0px;
+    z-index: 10;
     }
 
-
+    
 .opciones{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
-    background-color: red;
+
     height: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
-    
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Oswald', sans-serif; 
 }
 
 .opciones:hover{
@@ -81,20 +88,37 @@ a{
     justify-content: center;
     width: 100%;
     height: 500px;
-    background-color: yellow;
-    border-bottom: 3px solid black;
-    
+    background-color: rgb(30,30,30);
+    border-bottom: 3px solid rgb(200,200,200);
+    scroll-margin-top:20ex;
     
 }
 
 .main_container_box{
     width: 800px;
     height: 400px;
-    background-color: blue;
+    background-color: rgb(0, 157, 224);
     border-radius: 20px ;
     display: grid;
     grid-template-rows: 100px 37% 37%;
     grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
+
+.primer-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.presentacion{
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 6em;
+    
+    
     
 }
 
@@ -109,11 +133,15 @@ a{
 }
 
 .titulos_main{
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     grid-column: 1/4;
     font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Oswald', sans-serif; 
 }
 
 
@@ -124,6 +152,7 @@ a{
     justify-content: center;
     align-items: center;
     font-size: 100px;
+    color: white;
 }
 
 .main_container_box_item:first-child{
@@ -134,6 +163,17 @@ a{
 
 .main_container_box_item:nth-child(3){
     border-radius: 0px 20px 20px 0px;
+    
+}
+
+.imagen{
+    
+    margin-top: auto;
+    position: relative;
+    object-fit:contain;
+    z-index: 1;
+    margin-left: auto;
+   
     
 }
 
@@ -148,18 +188,44 @@ a{
     }
 
     .titulos_main{
-        
+        font-family: 'Fjalla One', sans-serif;
+        font-family: 'Lobster', cursive;
+        font-family: 'Oswald', sans-serif;  
         grid-column: 1/3;
     }
 
     
 
     .main_container_box{
+        width: 500px;
         height: 600px;
         grid-template-columns: 50% 50%;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         margin: 10px;
     }
+
+    .main_container_box_item{
+        font-size: 60px;
+    }
+    .primer-container{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    .imagen{
+        width: 100%;
+        height: 100%;
+    }
+
+    .presentacion{
+        text-align: center;
+        font-size: 3em;
+    }
+
+    
+
+    
+
+    
 
     
 }
